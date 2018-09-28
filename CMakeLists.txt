@@ -12,4 +12,4 @@ add_executable(cppTestProject
         algorithm/MergeSort.cpp
         algorithm/main.cpp
         algorithm/Sales_data.h
-        basic/ToHex.h algorithm/Shell.cpp algorithm/Astar.cpp algorithm/Astar.h algorithm/HuffmanTree.cpp)
+        basic/ToHex.h algorithm/Shell.cpp algorithm/Astar.cpp algorithm/Astar.h algorithm/HuffmanTree.cpp leetcode/Lbd.h)
