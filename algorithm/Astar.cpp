@@ -4,6 +4,7 @@
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "OCUnusedGlobalDeclarationInspection"
+
 void Astar::InitAstar(std::vector<std::vector<int>> &_maze) {
     maze = _maze;
 }
@@ -17,7 +18,7 @@ int Astar::calcG(Point *temp_start, Point *point) {
 int Astar::calcH(Point *point, Point *end) {
     //用简单的欧几里得距离计算H，这个H的计算是关键
     return static_cast<int>(sqrt((double) (end->x - point->x) * (double) (end->x - point->x) +
-                    (double) (end->y - point->y) * (double) (end->y - point->y)) * kCost1);
+                                 (double) (end->y - point->y) * (double) (end->y - point->y)) * kCost1);
 }
 
 int Astar::calcF(Point *point) {
@@ -122,4 +123,5 @@ std::vector<Point *> Astar::getSurroundPoints(const Point *point, bool isIgnoreC
 
     return surroundPoints;
 }
+
 #pragma clang diagnostic pop

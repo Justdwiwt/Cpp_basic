@@ -49,4 +49,5 @@ private:
     std::list<Point *> closeList; //关闭列表
 
 };
+
 #pragma clang diagnostic pop
