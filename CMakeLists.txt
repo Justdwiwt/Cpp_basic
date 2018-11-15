@@ -27,4 +27,4 @@ add_executable(cppTestProject
         src/leetcode/Lbd.h
         src/leetcode/104.cpp
         src/leetcode/344.cpp
-        src/leetcode/292.cpp)
+        src/leetcode/292.cpp src/leetcode/20.cpp src/leetcode/728.cpp)
