@@ -1,4 +1,3 @@
-#include <w32api/ntdef.h>
 #include "Lbd.h"
 
 struct TreeNode {
@@ -21,6 +20,11 @@ struct TreeNode {
 
 class Solution {
 public:
+    int max(int a, int b) {
+        if (a > b)return a;
+        else return b;
+    }
+
     int maxDepth(TreeNode *root) {
         if (!root)
             return 0;
