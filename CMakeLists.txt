@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.6.2)
 
 project(cppTestProject)
 
 #编译器相关设置
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_COMPILER "c++")         # 显示指定使用的C++编译器
 set(CMAKE_CXX_FLAGS "-g")                     # 调试信息
 set(CMAKE_CXX_FLAGS "-Wall")                  # 开启所有警告
