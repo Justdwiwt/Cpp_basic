@@ -22,7 +22,6 @@ public:
     }
 
 private:
-public:
     int strStrKMP(string haystack, string needle) {
         int i = 0;
         int k = 0;
