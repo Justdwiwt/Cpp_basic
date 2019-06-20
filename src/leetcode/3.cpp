@@ -4,6 +4,7 @@
 using namespace std;
 
 class Solution {
+public:
     int lengthOfLongestSubstring(string s) {
         int res = 0;
         int left = 0;
