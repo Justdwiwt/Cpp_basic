@@ -95,16 +95,16 @@ Point *Astar::isInList(const std::list<Point *> &list, const Point *point) const
 
 bool Astar::isCanreach(const Point *point, const Point *target, bool isIgnoreCorner) const {
     if (target->x < 0 || target->x > maze.size() - 1
-        || target->y < 0 && target->y > maze[0].size() - 1
+        || (target->y < 0 && target->y > maze[0].size() - 1)
         || maze[target->x][target->y] == 1
-        || target->x == point->x && target->y == point->y
+        || (target->x == point->x && target->y == point->y)
         || isInList(closeList, target)) //如果点与当前节点重合、超出地图、是障碍物、或者在关闭列表中，返回false
         return false;
     else {
         if (abs(point->x - target->x) + abs(point->y - target->y) == 1) //非斜角可以
             return true;
         else {
-            //斜对角要判断是否绊住 
+            //斜对角要判断是否绊住
             if (maze[point->x][target->y] == 0 && maze[target->x][point->y] == 0)
                 return true;
             else
