@@ -1,22 +1,21 @@
-#include <iostream>
-#include <map>
 #include <vector>
 #include <algorithm>
-#include <utility>
 
 using namespace std;
 
 class Solution {
 public:
-    vector<pair<int, int>> reconstructQueue(vector<pair<int, int >> &people) {
-        sort(people.begin(), people.end(), [](const pair<int, int> &resA, const pair<int, int> &resB) {
-            return resA.first > resB.first || (resA.first == resB.first && resA.second < resB.second);
+    vector<vector<int>> reconstructQueue(vector<vector<int>> &people) {
+        sort(people.begin(), people.end(), [](const vector<int> &a, const vector<int> &b) {
+            if (a[0] > b[0]) return true;
+            if (a[0] == b[0] && a[1] < b[1]) return true;
+            return false;
         });
-        vector<pair<int, int>> res(people.size());
-        for (auto &i : people) {
-            res.insert(res.begin() + i.second, i);
+
+        vector<vector<int>> res;
+        for (auto &e : people) {
+            res.insert(res.begin() + e[1], e);
         }
-        res.resize(people.size());
         return res;
     }
 };
