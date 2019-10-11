@@ -32,4 +32,4 @@ add_executable(cppTestProject
         src/leetcode/LCP2.cpp src/leetcode/LCP5.cpp src/leetcode/234.cpp src/leetcode/394.cpp src/leetcode/226.cpp
         src/leetcode/680.cpp src/leetcode/189.cpp src/leetcode/75.cpp src/leetcode/128.cpp src/leetcode/56.cpp
         src/leetcode/461.cpp src/leetcode/17.cpp src/leetcode/494.cpp src/algorithm/Trie.cpp src/algorithm/TopologicalSort.cpp
-        src/algorithm/BitMap.cpp src/algorithm/BitMap.h src/leetcode/8.cpp src/leetcode/16.cpp)
+        src/algorithm/BitMap.cpp src/algorithm/BitMap.h src/leetcode/8.cpp src/leetcode/16.cpp src/leetcode/230.cpp)
