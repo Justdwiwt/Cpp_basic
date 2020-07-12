@@ -4,7 +4,7 @@ project(cppTestProject)
 
 #编译器相关设置
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_COMPILER "c++")         # 显示指定使用的C++编译器
+set(CMAKE_CXX_COMPILER "c++")                 # 显示指定使用的C++编译器
 set(CMAKE_CXX_FLAGS "-g")                     # 调试信息
 set(CMAKE_CXX_FLAGS "-Wall")                  # 开启所有警告
 
@@ -69,4 +69,6 @@ add_executable(cppTestProject
         src/leetcode/95.cpp src/leetcode/96.cpp src/leetcode/98.cpp src/leetcode/99.cpp src/leetcode/100.cpp
         src/leetcode/103.cpp src/leetcode/106.cpp src/leetcode/107.cpp src/leetcode/109.cpp src/leetcode/110.cpp
         src/leetcode/113.cpp src/leetcode/114.cpp src/leetcode/115.cpp src/leetcode/116.cpp src/leetcode/117.cpp
-        src/leetcode/118.cpp src/leetcode/119.cpp src/leetcode/120.cpp src/leetcode/121.cpp src/leetcode/122.cpp src/leetcode/123.cpp src/leetcode/124.cpp src/leetcode/126.cpp src/leetcode/127.cpp)
+        src/leetcode/118.cpp src/leetcode/119.cpp src/leetcode/120.cpp src/leetcode/121.cpp src/leetcode/122.cpp
+        src/leetcode/123.cpp src/leetcode/124.cpp src/leetcode/126.cpp src/leetcode/127.cpp src/leetcode/130.cpp
+        src/leetcode/132.cpp src/leetcode/133.cpp src/leetcode/134.cpp src/leetcode/135.cpp)
