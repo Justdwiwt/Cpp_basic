@@ -13,30 +13,30 @@ struct TreeNode {
 
 class Solution {
 public:
-    TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
-        return buildTree(rbegin(inorder), rend(inorder),
-                         rbegin(postorder), rend(postorder));
+    TreeNode *buildTree(vector<int> &in_order, vector<int> &post_order) {
+        return buildTree(rbegin(in_order), rend(in_order),
+                         rbegin(post_order), rend(post_order));
     }
 
     template<typename RandomIt>
-    TreeNode *buildTree(RandomIt in_rfirst, RandomIt in_rlast,
-                        RandomIt post_rfirst, RandomIt post_rlast) {
-        if (in_rfirst == in_rlast) return nullptr;
-        if (post_rfirst == post_rlast) return nullptr;
+    TreeNode *buildTree(RandomIt in_rFirst, RandomIt in_rLast,
+                        RandomIt post_rFirst, RandomIt post_rLast) {
+        if (in_rFirst == in_rLast) return nullptr;
+        if (post_rFirst == post_rLast) return nullptr;
 
-        auto root = new TreeNode(*post_rfirst);
+        auto root = new TreeNode(*post_rFirst);
 
-        auto inRootRPos = find(in_rfirst, in_rlast, *post_rfirst);
-        auto RightSize = distance(in_rfirst, inRootRPos);
+        auto inRootRPos = find(in_rFirst, in_rLast, *post_rFirst);
+        auto RightSize = distance(in_rFirst, inRootRPos);
 
-        root->right = buildTree(in_rfirst,
-                                next(in_rfirst, RightSize),
-                                next(post_rfirst),
-                                next(post_rfirst, RightSize + 1));
+        root->right = buildTree(in_rFirst,
+                                next(in_rFirst, RightSize),
+                                next(post_rFirst),
+                                next(post_rFirst, RightSize + 1));
         root->left = buildTree(next(inRootRPos),
-                               in_rlast,
-                               next(post_rfirst, RightSize + 1),
-                               post_rlast);
+                               in_rLast,
+                               next(post_rFirst, RightSize + 1),
+                               post_rLast);
         return root;
     }
 };
