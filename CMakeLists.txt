@@ -72,4 +72,5 @@ add_executable(cppTestProject
         src/leetcode/118.cpp src/leetcode/119.cpp src/leetcode/120.cpp src/leetcode/121.cpp src/leetcode/122.cpp
         src/leetcode/123.cpp src/leetcode/124.cpp src/leetcode/126.cpp src/leetcode/127.cpp src/leetcode/130.cpp
         src/leetcode/132.cpp src/leetcode/133.cpp src/leetcode/134.cpp src/leetcode/135.cpp src/leetcode/136.cpp
-        src/leetcode/137.cpp src/leetcode/138.cpp src/leetcode/140.cpp src/leetcode/143.cpp)
+        src/leetcode/137.cpp src/leetcode/138.cpp src/leetcode/140.cpp src/leetcode/143.cpp src/leetcode/145.cpp
+        src/leetcode/147.cpp src/leetcode/149.cpp src/leetcode/150.cpp src/leetcode/151.cpp)
